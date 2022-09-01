@@ -1,0 +1,138 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  background: #FFFFFF;
+}
+
+body.dark{
+  background: #121214;
+}
+
+header{
+  justify-self: end;
+  align-self:end;
+
+  padding: 60px 60px;
+}
+
+.light-mode:hover{
+  cursor: pointer;
+}
+
+.dark-mode:hover{
+  cursor: pointer;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 150px;
+}
+
+.timer{
+  padding-right: 192px;
+}
+
+.time{
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-size: 126.166px;
+line-height: 148px;
+
+color: #323238;
+padding-bottom: 17px;
+}
+
+body.dark span{
+  color: white;
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 40px;
+}
+
+.controls button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dark .controls button svg path{
+  fill: #C4C4CC;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 32px;
+
+}
+
+.cards button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 32px;
+
+  border: none;
+
+  border-radius: 24px;;
+
+  background: #E1E1E6;
+
+  width: 138px;
+  height: 152px;
+
+}
+
+body.dark .cards button{
+  background: #29292E;
+}
+
+.cards button:hover{
+  background: #02799D;
+  cursor: pointer;
+}
+
+body.dark .cards button:hover{
+  background: #0A3442;
+}
+
+.cards button path{
+  fill: #323238; /*mudou a cor da img em svg que localiza-se no path*/
+}
+
+body.dark .cards button path{
+  fill: #C4C4CC;
+}
+
+input{
+  width: 90px;
+  height: 16px;
+
+}
+
+input:hover{
+  cursor: pointer;
+}
+
+.hide{
+  display: none; /*deixar invisível*/
+}
